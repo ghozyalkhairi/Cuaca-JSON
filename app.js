@@ -1,9 +1,12 @@
 const express = require("express")
 const app = express()
 const axios = require("axios")
+const cors = require("cors")
 const parseString = require("xml2js").parseStringPromise
 const dataURL =
   "https://data.bmkg.go.id/DataMKG/MEWS/DigitalForecast/DigitalForecast-Indonesia.xml"
+
+app.use(cors())
 
 app.get("/", async (req, res) => {
   const resp = await axios.get(dataURL)
