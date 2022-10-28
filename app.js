@@ -116,7 +116,7 @@ app.get("/kalimantan-barat", async (req, res) => {
   const parsed = await parseString(resp.data)
   const { forecast } = await parsed.data
   const [{ area }] = await forecast
-  res.json(parsed)
+  res.json(area)
 })
 
 app.get("/kalimantan-selatan", async (req, res) => {
