@@ -1,9 +1,6 @@
 {
   "name": "cuaca-server",
   "version": "1.0.0",
-  "engines": {
-    "node": "16.18.0"
-  },
   "description": "",
   "main": "index.js",
   "scripts": {
